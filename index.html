@@ -4,226 +4,271 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Klavier- & Akkordeonunterricht in Bad Zwischenahn | MusiKa - Karin Behrens-Neu</title>
-  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
   <meta name="color-scheme" content="light dark">
   <meta name="description" content="Klavier- & Akkordeonunterricht in Bad Zwischenahn. Individueller Musikunterricht für Kinder, Jugendliche, Erwachsene & Senioren von Diplom-Musiklehrerin Karin Behrens-Neu.">
   <meta property="og:title" content="Klavier- & Akkordeonunterricht in Bad Zwischenahn | MusiKa">
-<meta property="og:description" content="Individueller Musikunterricht für alle Altersgruppen.">
-<meta property="og:image" content="URL_TO_YOUR_IMAGE">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://musika-bad-zwischenahn.de">
+  <meta property="og:description" content="Individueller Musikunterricht für alle Altersgruppen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://musika-bad-zwischenahn.de">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Klavier- & Akkordeonunterricht in Bad Zwischenahn | MusiKa">
-<meta name="twitter:description" content="Individueller Musikunterricht für alle Altersgruppen.">
-<meta name="twitter:image" content="URL_TO_YOUR_IMAGE">
-  <style>
-    /* Article border in dark mode */
-    article {
-      border: none;
-    }
-    
-    @media (prefers-color-scheme: dark) {
-      article {
-        border: 1px solid var(--pico-border-color, rgb(28, 33, 44));
-      }
-    }
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Klavier- & Akkordeonunterricht in Bad Zwischenahn | MusiKa">
+  <meta name="twitter:description" content="Individueller Musikunterricht für alle Altersgruppen.">
 
-    .hero-header {
-      margin-top: 2rem;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.7)), url('klavier.jpg');
-      background-size: cover;
-      background-position: bottom;
-      background-repeat: no-repeat;
-      border-radius: var(--pico-border-radius);
-    }
+  
 
-    .no-padding {
-      padding: 0 !important;
-
-    }
-
-    .image-cover-article {
-      display: flex;
-      align-items: stretch;
-    }
-
-    .image-cover-article img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      border-radius: var(--pico-border-radius);
-    }
-
-    section.grid {
-      align-items: stretch;
-    }
-   
-  </style>
+  <link href="./style.css" rel="stylesheet">
 </head>
-<body>
-
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100 min-h-screen">
   <!-- Header -->
-  <header class="container hero-header">
-    <div style="text-align: center; margin-top: 2rem;">
-      <h1 style="color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">MusiKa Bad Zwischenahn</h1>
-      <p style="color: white; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">
-        Klavier- & Akkordeonunterricht mit Erfahrung & Begeisterung<br>
-        Individueller Musikunterricht für Kinder, Jugendliche, Erwachsene & Senioren
-      </p>
+  <header class="relative bg-cover bg-center bg-no-repeat rounded-2xl mx-4 mt-8 mb-12 overflow-hidden shadow-2xl hero-header">
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20"></div>
+    <div class="container mx-auto px-6 py-20 text-center relative z-10">
+      <div class="animate-fade-in">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 drop-shadow-2xl bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+          MusiKa Bad Zwischenahn
+        </h1>
+        <p class="text-xl md:text-2xl text-white mb-10 drop-shadow-lg max-w-4xl mx-auto leading-relaxed">
+          Klavier- & Akkordeonunterricht mit Erfahrung & Begeisterung<br>
+          <span class="text-accent font-medium">Individueller Musikunterricht für Kinder, Jugendliche, Erwachsene & Senioren</span>
+        </p>
+        <a href="#kontakt" 
+           class="inline-block bg-gradient-to-r from-primary to-secondary text-white font-semibold px-10 py-4 rounded-full hover:from-primary/90 hover:to-secondary/90 hover:scale-105 transition-all duration-500 ease-out shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+          Jetzt Probestunde vereinbaren
+        </a>
+      </div>
     </div>
-    <p style="text-align: center;">
-      <a href="#kontakt" role="button" style="background: white; color: #4B3F72; font-weight: 600;">Jetzt Probestunde vereinbaren</a>
-    </p>
   </header>
 
-  <main class="container">
+  <main class="container mx-auto px-6 max-w-7xl">
 
     <!-- Über mich -->
-    <div class="grid">
-      <article class="no-padding image-cover-article">
-        <img src="karin_flügel.jpg" alt="Karin Behrens-Neu am Flügel, Musiklehrerin in Bad Zwischenahn">
-      </article>
-      <article>
-        <h4>👋</h4>
-        <h5>Hallo!</h5>
-        <p>Ich bin <strong>Karin Behrens-Neu</strong>, Diplom-Musiklehrerin mit über 30 Jahren Erfahrung im Einzel- und Gruppenunterricht.</p>
-        <p>Meine Schwerpunkte liegen im professionellen Unterricht für <strong>Klavier</strong>, <strong>Akkordeon</strong> und <strong>Orgel</strong> – individuell, praxisnah und mit viel Begeisterung.</p>
-        <p>Ob Kinder ab dem Vorschulalter, Jugendliche, Erwachsene oder Senioren – ich biete persönlichen Musikunterricht für jede Lebensphase.</p>
-        <p>Darüber hinaus bin ich geprüfte <strong>Organistin (C-Prüfung)</strong>, gebe <strong>musikalische Umrahmungen</strong> & Konzerte.</p>
-      </article>
-      
+    <div class="grid md:grid-cols-2 gap-12 mb-16 animate-slide-up">
+      <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+        <div class="relative">
+          <img src="karin_flügel.jpg" 
+               alt="Karin Behrens-Neu am Flügel, Musiklehrerin in Bad Zwischenahn"
+               class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 dark:from-primary/20 dark:via-secondary/20 dark:to-accent/20"></div>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+        <div class="text-4xl mb-6 text-primary dark:text-purple-300">👋</div>
+        <h2 class="text-3xl font-bold mb-6 text-primary dark:text-purple-300">Hallo!</h2>
+        <div class="space-y-4 text-gray-800 dark:text-gray-100 leading-relaxed">
+                      <p>Ich bin <strong class="text-primary dark:text-purple-300">Karin Behrens-Neu</strong>, Diplom-Musiklehrerin mit über 30 Jahren Erfahrung im Einzel- und Gruppenunterricht.</p>
+          <p>Meine Schwerpunkte liegen im professionellen Unterricht für <strong class="text-primary dark:text-purple-300">Klavier</strong>, <strong class="text-primary dark:text-purple-300">Akkordeon</strong> und <strong class="text-primary dark:text-purple-300">Orgel</strong> – individuell, praxisnah und mit viel Begeisterung.</p>
+          <p>Ob Kinder ab dem Vorschulalter, Jugendliche, Erwachsene oder Senioren – ich biete persönlichen Musikunterricht für jede Lebensphase.</p>
+          <p>Darüber hinaus bin ich geprüfte <strong class="text-primary dark:text-purple-300">Organistin (C-Prüfung)</strong>, gebe <strong class="text-primary dark:text-purple-300">musikalische Umrahmungen</strong> & Konzerte.</p>
+        </div>
+      </div>
     </div>
 
-    <!-- Qualifikation & Erfahrung -
-
     <!-- Unterricht -->
-    <div class="grid">
-      <article>
-        <h4>🎹</h4>
-        <h5>Klavier</h5>
-        <p>Klassischer und moderner Klavierunterricht für alle Altersgruppen</p>
-      </article>
-      <article>
-        <h4>🪗</h4>
-        <h5>Akkordeon</h5>
-        <p>Traditionelles und zeitgemäßes Akkordeonspiel erlernen</p>
-      </article>
-      <article>
-        <h4>🎓</h4>
-        <h5>Orgel</h5>
-        <p>Orgelspiel für Gottesdienste</p>
-
-      </article>
-      <article>
-        <h4>👥</h4>
-        <h5>Didaktik</h5>
-        <p></p>
-      </article>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-primary cursor-pointer">
+        <div class="text-4xl mb-6 text-primary dark:text-purple-300">🎹</div>
+        <h3 class="text-2xl font-bold mb-4 text-primary dark:text-purple-300">Klavier</h3>
+        <p class="text-gray-700 dark:text-gray-100 leading-relaxed">Klassischer und moderner Klavierunterricht für alle Altersgruppen</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-secondary cursor-pointer">
+        <div class="text-4xl mb-6 text-secondary dark:text-violet-300">🪗</div>
+        <h3 class="text-2xl font-bold mb-4 text-secondary dark:text-violet-300">Akkordeon</h3>
+        <p class="text-gray-700 dark:text-gray-100 leading-relaxed">Traditionelles und zeitgemäßes Akkordeonspiel erlernen</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-accent cursor-pointer">
+        <div class="text-4xl mb-6 text-accent dark:text-amber-300">🎓</div>
+        <h3 class="text-2xl font-bold mb-4 text-accent dark:text-amber-300">Orgel</h3>
+        <p class="text-gray-700 dark:text-gray-100 leading-relaxed">Orgelspiel für Gottesdienste</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-gray-400 cursor-pointer">
+        <div class="text-4xl mb-6 text-gray-600 dark:text-gray-300">👥</div>
+        <h3 class="text-2xl font-bold mb-4 text-gray-600 dark:text-gray-300">Didaktik</h3>
+        <p class="text-gray-700 dark:text-gray-100 leading-relaxed">Montessori-inspirierte Lernansätze für individuellen und spielerischen Musikunterricht.</p>
+      </div>
     </div>
 
     <!-- Konzerte -->
-    <article id="konzerte">
-      <h4>🎤</h4>
-      <h5>Konzerte & Auftritte</h5>
-      <p><strong>Beispiel:</strong> "Musik im Advent" am 19.11.2021, Martin-Luther-Kirche Südorf</p>
-
-    </article>
-
-    <article id="Musik">
-      <h4>🎶</h4>
-      <h5>Musik</h5>
-      <div class="grid">
-        <article>
-          <h6>Piano/Klavier</h6>
-          <ul>
-            <li>Aus Holberg Zeit (op.40) – Edvard Grieg (1843-1907)<br>
-              <small>I. Prealium – II. Sarabande – III. Gavotte – V. Rigaudon</small>
-            </li>
-            <li>Carrickfernus (Scottish) – Carsten Gerlitz / Piano</li>
-            <li>Uberørt af Yens Trachee (Dänemark) – Klaus Brunch</li>
-          </ul>
-          </article>
-
-
-          <article> 
-            <h6>Akkordeon</h6>
-            <ul>
-              <li>Französischer Besuch in Bromöller – Lars Holm (Schweden)</li>
-              <li>Bella Notte – S. Burke / P. Lee</li>
-              <li>Valette – Unto Jutila (Finnland)</li>
-              <li>Nach Serenadgarten – Lars Holm</li>
-              <li>Prelude ("Skandinavien Suite") – Egal Hauge</li>
-            </ul>
-            </article>
-        <article>
-        <h6>Orgel</h6>
-      <ul>
-        <li>Sortier D-Dur – César Franck (1822-1890)</li>
-        <li>Menuett und Trio d-Moll – William Faulkes</li>
-        <li>Toccatina – Reiner Gaar (2001 Komp.)</li>
-        <li>The Lord of Dance (Irland) – Roman Hardiman</li>
-        <li>Andante für die kleine Orgel – W.A. Mozart</li>
-      </ul>
-      </article>
-      
-      
+    <div class="bg-gradient-to-r from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 rounded-2xl p-10 shadow-xl mb-16 border border-primary/20">
+      <div class="text-4xl mb-6 text-accent dark:text-amber-300">🎤</div>
+      <h2 class="text-3xl font-bold mb-6 text-primary dark:text-purple-300">Konzerte & Auftritte</h2>
+              <p class="text-lg text-gray-800 dark:text-gray-100"><strong class="text-primary dark:text-purple-300">Beispiel:</strong> "Musik im Advent" am 19.11.2021, Martin-Luther-Kirche Südorf</p>
     </div>
-    </article>
+
+    <!-- Musik -->
+    <div class="bg-white dark:bg-gray-800 rounded-2xl p-10 shadow-xl mb-16">
+      <div class="text-center mb-12">
+        <div class="text-5xl mb-4 text-primary dark:text-purple-300">🎶</div>
+        <h2 class="text-4xl font-bold mb-4 text-primary dark:text-purple-300">Musik</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">Eine Auswahl meines Repertoires – von klassischen Meisterwerken bis zu zeitgenössischen Kompositionen</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Piano/Klavier -->
+        <div class="group bg-gradient-to-br from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10 rounded-2xl p-8 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-center mb-6">
+            <div class="text-3xl mr-4">🎹</div>
+            <h3 class="text-2xl font-bold text-primary dark:text-purple-300">Piano/Klavier</h3>
+          </div>
+          <ul class="space-y-4">
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-primary">
+              <div class="font-semibold text-gray-800 dark:text-gray-100 mb-1">Aus Holberg Zeit (op.40)</div>
+              <div class="text-sm text-primary dark:text-purple-300 mb-2">Edvard Grieg (1843-1907)</div>
+              <div class="text-xs text-gray-500 dark:text-gray-400 italic">I. Prealium – II. Sarabande – III. Gavotte – V. Rigaudon</div>
+            </li>
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-primary">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">Carrickfernus (Scottish)</div>
+              <div class="text-sm text-primary dark:text-purple-300">Carsten Gerlitz / Piano</div>
+            </li>
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-primary">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">Uberørt af Yens Trachee</div>
+              <div class="text-sm text-primary dark:text-purple-300">Klaus Brunch (Dänemark)</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Akkordeon -->
+        <div class="group bg-gradient-to-br from-secondary/5 to-accent/5 dark:from-secondary/10 dark:to-accent/10 rounded-2xl p-8 border border-secondary/20 hover:border-secondary/40 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-center mb-6">
+            <div class="text-3xl mr-4">🪗</div>
+            <h3 class="text-2xl font-bold text-secondary dark:text-violet-300">Akkordeon</h3>
+          </div>
+          <ul class="space-y-4">
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-secondary">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">Französischer Besuch in Bromöller</div>
+              <div class="text-sm text-secondary dark:text-violet-300">Lars Holm (Schweden)</div>
+            </li>
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-secondary">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">Bella Notte</div>
+              <div class="text-sm text-secondary dark:text-violet-300">S. Burke / P. Lee</div>
+            </li>
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-secondary">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">Valette</div>
+              <div class="text-sm text-secondary dark:text-violet-300">Unto Jutila (Finnland)</div>
+            </li>
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-secondary">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">Nach Serenadgarten</div>
+              <div class="text-sm text-secondary dark:text-violet-300">Lars Holm</div>
+            </li>
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-secondary">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">Prelude ("Skandinavien Suite")</div>
+              <div class="text-sm text-secondary dark:text-violet-300">Egal Hauge</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Orgel -->
+        <div class="group bg-gradient-to-br from-accent/5 to-primary/5 dark:from-accent/10 dark:to-primary/10 rounded-2xl p-8 border border-accent/20 hover:border-accent/40 transition-all duration-300 hover:shadow-lg">
+          <div class="flex items-center mb-6">
+            <div class="text-3xl mr-4">🎓</div>
+            <h3 class="text-2xl font-bold text-accent dark:text-amber-300">Orgel</h3>
+          </div>
+          <ul class="space-y-4">
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-accent">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">Sortier D-Dur</div>
+              <div class="text-sm text-accent dark:text-amber-300">César Franck (1822-1890)</div>
+            </li>
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-accent">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">Menuett und Trio d-Moll</div>
+              <div class="text-sm text-accent dark:text-amber-300">William Faulkes</div>
+            </li>
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-accent">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">Toccatina</div>
+              <div class="text-sm text-accent dark:text-amber-300">Reiner Gaar (2001 Komp.)</div>
+            </li>
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-accent">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">The Lord of Dance (Irland)</div>
+              <div class="text-sm text-accent dark:text-amber-300">Roman Hardiman</div>
+            </li>
+            <li class="group/item bg-white dark:bg-gray-700 rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border-l-4 border-accent">
+              <div class="font-semibold text-gray-800 dark:text-gray-100">Andante für die kleine Orgel</div>
+              <div class="text-sm text-accent dark:text-amber-300">W.A. Mozart</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <!-- FAQ -->
-    <article id="faq">
-      <h4>❓</h4>
-      <h5>Häufige Fragen</h5>
-      <details>
-        <summary>Wie lange dauert eine Unterrichtsstunde?</summary>
-        <p>30, 45 oder 60 Minuten – je nach Alter und Fortschritt. Für Vorschulkinder meist 30 Minuten optimal.</p>
-      </details>
-   
-      <details>
-        <summary>Brauche ich ein eigenes Instrument?</summary>
-        <p>Für den Unterricht steht ein Klavier bereit. Für zuhause wird ein eigenes Instrument empfohlen – ich berate Sie gerne bei der Auswahl.</p>
-      </details>
-    </article>
+    <div class="bg-white dark:bg-gray-800 rounded-2xl p-10 shadow-xl mb-16">
+      <div class="text-4xl mb-6 text-primary dark:text-purple-300">❓</div>
+      <h2 class="text-3xl font-bold mb-8 text-primary dark:text-purple-300">Häufige Fragen</h2>
+      <div class="space-y-6">
+        <details class="group bg-gradient-to-r from-primary/5 to-secondary/5 dark:from-primary/10 dark:to-secondary/10 rounded-xl p-6 border border-primary/20 hover:border-primary/40 transition-all duration-300">
+          <summary class="cursor-pointer font-semibold text-lg hover:text-primary transition-colors duration-200 flex items-center">
+            <span class="mr-3 text-primary">+</span>
+            Wie lange dauert eine Unterrichtsstunde?
+          </summary>
+          <p class="mt-4 text-gray-800 dark:text-gray-100 leading-relaxed pl-8">
+            30, 45 oder 60 Minuten – je nach Alter und Fortschritt. Für Vorschulkinder meist 30 Minuten optimal.
+          </p>
+        </details>
+        <details class="group bg-gradient-to-r from-secondary/5 to-accent/5 dark:from-secondary/10 dark:to-accent/10 rounded-xl p-6 border border-secondary/20 hover:border-secondary/40 transition-all duration-300">
+          <summary class="cursor-pointer font-semibold text-lg hover:text-secondary transition-colors duration-200 flex items-center">
+            <span class="mr-3 text-secondary">+</span>
+            Brauche ich ein eigenes Instrument?
+          </summary>
+          <p class="mt-4 text-gray-800 dark:text-gray-100 leading-relaxed pl-8">
+            Für den Unterricht steht ein Klavier bereit. Für zuhause wird ein eigenes Instrument empfohlen – ich berate Sie gerne bei der Auswahl.
+          </p>
+        </details>
+      </div>
+    </div>
 
     <!-- Kontakt -->
-    <article id="kontakt">
-      <h4>📞</h4>
-      <h5>Kontakt</h5>
-      <address>
-        MusiKa Bad Zwischenahn<br>
-        Karin Behrens-Neu<br>
-        Quendelweg 2<br>
-        26160 Bad Zwischenahn
-      </address>
-      <p>
-        Tel: <a href="tel:+4944919239920">04491 / 923 9920</a><br>
-        Mobil: <a href="tel:+491707027207">0170 / 702 7207</a><br>
-        Email: <a href="mailto:karin@musika-bad-zwischenahn.de">mail@musika-bad-zwischenahn.de</a>
-      </p>
-      <footer>
-        <small>Datenschutz: Keine Cookies, keine Tracker. Kontaktdaten werden nur zur Bearbeitung Ihrer Anfrage verwendet. Keine Weitergabe an Dritte.</small>
+    <div id="kontakt" class="bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 dark:from-primary/10 dark:via-secondary/10 dark:to-accent/10 rounded-2xl p-10 shadow-xl mb-16 border border-primary/20">
+      <div class="text-4xl mb-6 text-primary dark:text-purple-300">📞</div>
+      <h2 class="text-3xl font-bold mb-8 text-primary dark:text-purple-300">Kontakt</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
+          <address class="not-italic text-gray-800 dark:text-gray-100">
+            <strong class="text-primary text-lg">MusiKa Bad Zwischenahn</strong><br>
+            <span class="text-lg">Karin Behrens-Neu</span><br>
+            Quendelweg 2<br>
+            26160 Bad Zwischenahn
+          </address>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg space-y-3">
+          <p class="flex items-center text-gray-800 dark:text-gray-100">
+            <span class="text-primary mr-3">📞</span>
+            Tel: <a href="tel:+4944919239920" class="text-primary hover:text-secondary transition-colors duration-200 font-semibold ml-2">04491 / 923 9920</a>
+          </p>
+          <p class="flex items-center text-gray-800 dark:text-gray-100">
+            <span class="text-secondary mr-3">📱</span>
+            Mobil: <a href="tel:+491707027207" class="text-secondary hover:text-primary transition-colors duration-200 font-semibold ml-2">0170 / 702 7207</a>
+          </p>
+          <p class="flex items-center text-gray-800 dark:text-gray-100">
+            <span class="text-accent mr-3">✉️</span>
+            Email: <a href="mailto:karin@musika-bad-zwischenahn.de" class="text-accent hover:text-primary transition-colors duration-200 font-semibold ml-2">karin@musika-bad-zwischenahn.de</a>
+          </p>
+        </div>
+      </div>
+      <footer class="mt-10 pt-8 border-t border-primary/20">
+        <small class="text-gray-700 dark:text-gray-200 text-center block">
+          Datenschutz: Keine Cookies, keine Tracker. Kontaktdaten werden nur zur Bearbeitung Ihrer Anfrage verwendet. Keine Weitergabe an Dritte.
+        </small>
       </footer>
-    </article>
+    </div>
   </main>
+
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MusicSchool",
-  "name": "MusiKa Bad Zwischenahn",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Quendelweg 2",
-    "addressLocality": "Bad Zwischenahn",
-    "postalCode": "26160",
-    "addressCountry": "DE"
-  },
-  "telephone": "+4944919239920",
-  "email": "mail@musika-bad-zwischenahn.de",
-  "url": "https://musika-bad-zwischenahn.de",
-  "founder": "Karin Behrens-Neu"
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicSchool",
+    "name": "MusiKa Bad Zwischenahn",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Quendelweg 2",
+      "addressLocality": "Bad Zwischenahn",
+      "postalCode": "26160",
+      "addressCountry": "DE"
+    },
+    "telephone": "+4944919239920",
+    "email": "karin@musika-bad-zwischenahn.de",
+    "url": "https://musika-bad-zwischenahn.de",
+    "founder": "Karin Behrens-Neu"
+  }
+  </script>
 </body>
-</html>
+</html> 
