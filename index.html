@@ -1,17 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Musika Bad Zwischenahn</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klavier- & Akkordeonunterricht in Bad Zwischenahn | MusiKa - Karin Behrens-Neu</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Klavier- & Akkordeonunterricht in Bad Zwischenahn. Individueller Musikunterricht für Kinder, Jugendliche, Erwachsene & Senioren von Diplom-Musiklehrerin Karin Behrens-Neu.">
+  <meta property="og:title" content="Klavier- & Akkordeonunterricht in Bad Zwischenahn | MusiKa">
+<meta property="og:description" content="Individueller Musikunterricht für alle Altersgruppen.">
+<meta property="og:image" content="URL_TO_YOUR_IMAGE">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://musika-bad-zwischenahn.de">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Klavier- & Akkordeonunterricht in Bad Zwischenahn | MusiKa">
+<meta name="twitter:description" content="Individueller Musikunterricht für alle Altersgruppen.">
+<meta name="twitter:image" content="URL_TO_YOUR_IMAGE">
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 2rem; }
-    h1 { color: #2c3e50; }
-    p { color: #555; }
+    /* Article border in dark mode */
+    article {
+      border: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      article {
+        border: 1px solid var(--pico-border-color, rgb(28, 33, 44));
+      }
+    }
+
+    .hero-header {
+      margin-top: 2rem;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.7)), url('klavier.jpg');
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      border-radius: var(--pico-border-radius);
+    }
+
+    .no-padding {
+      padding: 0 !important;
+
+    }
+
+    .image-cover-article {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .image-cover-article img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: var(--pico-border-radius);
+    }
+
+    section.grid {
+      align-items: stretch;
+    }
+   
   </style>
 </head>
 <body>
-  <h1>Musika Bad Zwischenahn</h1>
-  <p>Musika Bad Zwischenahn</p>
+
+  <!-- Header -->
+  <header class="container hero-header">
+    <div style="text-align: center; margin-top: 2rem;">
+      <h1 style="color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">MusiKa Bad Zwischenahn</h1>
+      <p style="color: white; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">
+        Klavier- & Akkordeonunterricht mit Erfahrung & Begeisterung<br>
+        Individueller Musikunterricht für Kinder, Jugendliche, Erwachsene & Senioren
+      </p>
+    </div>
+    <p style="text-align: center;">
+      <a href="#kontakt" role="button" style="background: white; color: #4B3F72; font-weight: 600;">Jetzt Probestunde vereinbaren</a>
+    </p>
+  </header>
+
+  <main class="container">
+
+    <!-- Über mich -->
+    <div class="grid">
+      <article class="no-padding image-cover-article">
+        <img src="karin_flügel.jpg" alt="Karin Behrens-Neu am Flügel, Musiklehrerin in Bad Zwischenahn">
+      </article>
+      <article>
+        <h4>👋</h4>
+        <h5>Hallo!</h5>
+        <p>Ich bin <strong>Karin Behrens-Neu</strong>, Diplom-Musiklehrerin mit über 30 Jahren Erfahrung im Einzel- und Gruppenunterricht.</p>
+        <p>Meine Schwerpunkte liegen im professionellen Unterricht für <strong>Klavier</strong>, <strong>Akkordeon</strong> und <strong>Orgel</strong> – individuell, praxisnah und mit viel Begeisterung.</p>
+        <p>Ob Kinder ab dem Vorschulalter, Jugendliche, Erwachsene oder Senioren – ich biete persönlichen Musikunterricht für jede Lebensphase.</p>
+        <p>Darüber hinaus bin ich geprüfte <strong>Organistin (C-Prüfung)</strong>, gebe <strong>musikalische Umrahmungen</strong> & Konzerte.</p>
+      </article>
+      
+    </div>
+
+    <!-- Qualifikation & Erfahrung -
+
+    <!-- Unterricht -->
+    <div class="grid">
+      <article>
+        <h4>🎹</h4>
+        <h5>Klavier</h5>
+        <p>Klassischer und moderner Klavierunterricht für alle Altersgruppen</p>
+      </article>
+      <article>
+        <h4>🪗</h4>
+        <h5>Akkordeon</h5>
+        <p>Traditionelles und zeitgemäßes Akkordeonspiel erlernen</p>
+      </article>
+      <article>
+        <h4>🎓</h4>
+        <h5>Orgel</h5>
+        <p>Orgelspiel für Gottesdienste</p>
+
+      </article>
+      <article>
+        <h4>👥</h4>
+        <h5>Didaktik</h5>
+        <p></p>
+      </article>
+    </div>
+
+    <!-- Konzerte -->
+    <article id="konzerte">
+      <h4>🎤</h4>
+      <h5>Konzerte & Auftritte</h5>
+      <p><strong>Beispiel:</strong> "Musik im Advent" am 19.11.2021, Martin-Luther-Kirche Südorf</p>
+
+    </article>
+
+    <article id="Musik">
+      <h4>🎶</h4>
+      <h5>Musik</h5>
+      <div class="grid">
+        <article>
+          <h6>Piano/Klavier</h6>
+          <ul>
+            <li>Aus Holberg Zeit (op.40) – Edvard Grieg (1843-1907)<br>
+              <small>I. Prealium – II. Sarabande – III. Gavotte – V. Rigaudon</small>
+            </li>
+            <li>Carrickfernus (Scottish) – Carsten Gerlitz / Piano</li>
+            <li>Uberørt af Yens Trachee (Dänemark) – Klaus Brunch</li>
+          </ul>
+          </article>
+
+
+          <article> 
+            <h6>Akkordeon</h6>
+            <ul>
+              <li>Französischer Besuch in Bromöller – Lars Holm (Schweden)</li>
+              <li>Bella Notte – S. Burke / P. Lee</li>
+              <li>Valette – Unto Jutila (Finnland)</li>
+              <li>Nach Serenadgarten – Lars Holm</li>
+              <li>Prelude ("Skandinavien Suite") – Egal Hauge</li>
+            </ul>
+            </article>
+        <article>
+        <h6>Orgel</h6>
+      <ul>
+        <li>Sortier D-Dur – César Franck (1822-1890)</li>
+        <li>Menuett und Trio d-Moll – William Faulkes</li>
+        <li>Toccatina – Reiner Gaar (2001 Komp.)</li>
+        <li>The Lord of Dance (Irland) – Roman Hardiman</li>
+        <li>Andante für die kleine Orgel – W.A. Mozart</li>
+      </ul>
+      </article>
+      
+      
+    </div>
+    </article>
+
+    <!-- FAQ -->
+    <article id="faq">
+      <h4>❓</h4>
+      <h5>Häufige Fragen</h5>
+      <details>
+        <summary>Wie lange dauert eine Unterrichtsstunde?</summary>
+        <p>30, 45 oder 60 Minuten – je nach Alter und Fortschritt. Für Vorschulkinder meist 30 Minuten optimal.</p>
+      </details>
+   
+      <details>
+        <summary>Brauche ich ein eigenes Instrument?</summary>
+        <p>Für den Unterricht steht ein Klavier bereit. Für zuhause wird ein eigenes Instrument empfohlen – ich berate Sie gerne bei der Auswahl.</p>
+      </details>
+    </article>
+
+    <!-- Kontakt -->
+    <article id="kontakt">
+      <h4>📞</h4>
+      <h5>Kontakt</h5>
+      <address>
+        MusiKa Bad Zwischenahn<br>
+        Karin Behrens-Neu<br>
+        Quendelweg 2<br>
+        26160 Bad Zwischenahn
+      </address>
+      <p>
+        Tel: <a href="tel:+4944919239920">04491 / 923 9920</a><br>
+        Mobil: <a href="tel:+491707027207">0170 / 702 7207</a><br>
+        Email: <a href="mailto:karin@musika-bad-zwischenahn.de">mail@musika-bad-zwischenahn.de</a>
+      </p>
+      <footer>
+        <small>Datenschutz: Keine Cookies, keine Tracker. Kontaktdaten werden nur zur Bearbeitung Ihrer Anfrage verwendet. Keine Weitergabe an Dritte.</small>
+      </footer>
+    </article>
+  </main>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicSchool",
+  "name": "MusiKa Bad Zwischenahn",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Quendelweg 2",
+    "addressLocality": "Bad Zwischenahn",
+    "postalCode": "26160",
+    "addressCountry": "DE"
+  },
+  "telephone": "+4944919239920",
+  "email": "mail@musika-bad-zwischenahn.de",
+  "url": "https://musika-bad-zwischenahn.de",
+  "founder": "Karin Behrens-Neu"
+}
+</script>
 </body>
 </html>
